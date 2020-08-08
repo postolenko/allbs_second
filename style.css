@@ -1233,8 +1233,47 @@ textarea:focus {
 
 /* ----- Responsive Menu Button ------ */
 
-.respmenubtn {
-    display: none;
+.close_btn {
+    background: transparent;
+    cursor: pointer;
+    border: 1px solid transparent;
+    width: 45px;
+    height: 37px;
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    /*outline: 1px solid red;*/
+    z-index: 5;
+}
+
+.close_btn span:first-child {
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+    margin: 3px 0 0 0;
+    position: relative;
+    top: 2px;
+    left: 4px;
+}
+
+.close_btn span:nth-child(2) {
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+
+.close_btn span {
+    background: #000000;
+    display: block;
+    width: 35px;
+    height: 2px;
+    margin: 0 auto 7px auto;
+}
+
+/*.respmenubtn {
+    display: block;
     width: 45px;
     height: 37px;
     background: transparent;
@@ -1242,9 +1281,17 @@ textarea:focus {
     position: relative;
     z-index: 11;
     border: 1px solid transparent;
-}
+}*/
 
-.respmenubtn span {
+/*.respmenubtn {
+    display: block;
+    position: absolute;
+    top: 6px;
+    right: 11px;
+    z-index: 12;
+}*/
+
+/*.respmenubtn span {
     display: block;
     width: 27px;
     height: 2px;
@@ -1313,6 +1360,10 @@ textarea:focus {
     -o-transform: rotate(-45deg);
     transform: rotate(-45deg);
 }
+
+.respmenubtn_2 span {
+    background: #000000;
+}*/
 
 /* ----- / Responsive Menu Button ------ */
 
@@ -1419,16 +1470,19 @@ img.logo_black {
 
 .header_1 .left {
     width: calc(50% - 175px);
+    /*outline: 1px solid red;*/
 }
 
 .header_1 .center {
     width: 350px;
     float: left;
     text-align: center;
+    /*outline: 1px solid red;*/
 }
 
 .header_1 .right {
     width: calc(50% - 175px);
+    /*outline: 1px solid red;*/
 }
 
 .menu_2_wrapp {
@@ -1550,33 +1604,30 @@ img.logo_black {
 }
 
 .menu_2 {
-    display: none;
-    margin-top: 17px;
+    /*display: none;*/
+    display: block;
+    /*margin-top: 17px;*/
+    max-width: 600px;
+    margin: 17px auto 0 auto;
     padding: 10px 0;
     background: #fff;
     width: 100%;
-    max-height: 150px;
+/*    max-height: 150px;
     overflow-y: auto;
     position: absolute;
     top: 100%;
-    left: 0;
-    -webkit-box-shadow: 0 0 5px 0 rgba(0,0,0,.5);
+    left: 0;*/
+/*    -webkit-box-shadow: 0 0 5px 0 rgba(0,0,0,.5);
     -moz-box-shadow: 0 0 5px 0 rgba(0,0,0,.5);
-    box-shadow: 0 0 5px 0 rgba(0,0,0,.5);
+    box-shadow: 0 0 5px 0 rgba(0,0,0,.5);*/
     z-index: 2;
-}
-
-.menu_2 ul {
-
-}
-
-.menu_2 ul li {
-
 }
 
 .menu_2 ul li a {
     display: block;
-    padding: 3px 15px;
+    padding: 6px 15px;
+    font-size: 20px;
+    line-height: 20px;
     -webkit-transition-property: background, color;
     -webkit-transition-duration: .3s;
     -webkit-transition-timing-function: ease;
@@ -1608,6 +1659,22 @@ img.logo_black {
     background: rgba(62, 176, 96, .15);
     color: #3eb060;
     border-left: 2px solid #3eb060;
+}
+
+.main_nav_wrapp {
+    display: none;
+    width: 100%;
+    height: 100vh;
+    overflow-y: auto;
+    margin: 0;
+    padding-top: 10px;
+    padding-bottom: 80px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 11;
+    /*background: rgba(0, 0, 0, .9);*/
+    background: rgba(255, 255, 255, .95);
 }
 
 /*-- /Header - Inner --*/

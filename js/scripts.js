@@ -205,13 +205,13 @@ $(document).ready(function() {
         }
     });
 
-    $(".respmenubtn").click(function() {
+    $(".respmenubtn, #resp_nav .close_btn").click(function() {
         if( $("#resp_nav").is(":hidden") ) {
             $("#resp_nav").fadeIn(300);
-            $(this).addClass("active");
+            $(".respmenubtn").addClass("active");
         } else {
             $("#resp_nav").fadeOut(300);
-            $(this).removeClass("active");
+            $(".respmenubtn").removeClass("active");
         }
     });
 
@@ -1153,35 +1153,35 @@ $(document).ready(function() {
 
     // -----------------
 
-    $(".menu_btn_2").on("click", function(e) {
-        e.preventDefault();
-        parentBlock = $(this).closest(".menu_2_wrapp");
-        dropdowmMenu = parentBlock.find(".menu_2");
-        if(dropdowmMenu.is(":hidden")) {
-            dropdowmMenu.slideDown(200);
-            $(this).addClass("active");
-        } else {
-            dropdowmMenu.slideUp(200);
-            $(this).removeClass("active");
-        }
-    });
+    // $(".menu_btn_2").on("click", function(e) {
+    //     e.preventDefault();
+    //     parentBlock = $(this).closest(".menu_2_wrapp");
+    //     dropdowmMenu = parentBlock.find(".menu_2");
+    //     if(dropdowmMenu.is(":hidden")) {
+    //         dropdowmMenu.slideDown(200);
+    //         $(this).addClass("active");
+    //     } else {
+    //         dropdowmMenu.slideUp(200);
+    //         $(this).removeClass("active");
+    //     }
+    // });
 
-    $(this).keydown(function(eventObject){
-        if (eventObject.which == 27) {
-            $(".menu_2").slideUp(300);
-            setTimeout(function() {
-                $(".menu_btn_2").removeClass("active");
-            }, 400);
-        }
-    });
+    // $(this).keydown(function(eventObject){
+    //     if (eventObject.which == 27) {
+    //         $(".menu_2").slideUp(300);
+    //         setTimeout(function() {
+    //             $(".menu_btn_2").removeClass("active");
+    //         }, 400);
+    //     }
+    // });
 
-    $(document).mouseup(function(e) {
-        hide_element = $(".menu_2");
-        if (!hide_element.is(e.target)
-            && hide_element.has(e.target).length === 0) {
-            hide_element.slideUp(300);
-            $(".menu_btn_2").removeClass("active");
-        }
-    });
+    // $(document).mouseup(function(e) {
+    //     hide_element = $(".menu_2");
+    //     if (!hide_element.is(e.target)
+    //         && hide_element.has(e.target).length === 0) {
+    //         hide_element.slideUp(300);
+    //         $(".menu_btn_2").removeClass("active");
+    //     }
+    // });
 
 });
