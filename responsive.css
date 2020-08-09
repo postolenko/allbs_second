@@ -242,6 +242,30 @@
 
 	/*-- /Section 3 - Info Side Page --*/
 
+	.map_object_header_2 {
+		display: none;
+	}
+
+	.filter_resp {
+	    padding-bottom: 100px;
+	}
+
+	.novisible_1024 {
+		display: none;
+	}
+
+	.visible_1024 {
+		display: block;
+	}
+
+/*	.map_object_header_2 > .left_col {
+	    width: 100%;
+	}
+
+	.map_object_header_2 > .right_col {
+		display: none;
+	}*/
+
 }
 
 @media only screen and (max-width: 900px) {
@@ -1102,6 +1126,10 @@
 /*	.dropdowm_wrapp_2 .dropdown_menu {
 	    min-width: 145px;
 	}*/
+
+	.logo_city {
+	    min-width: 224px;
+	}
 
 	/*-- /Header --*/
 
