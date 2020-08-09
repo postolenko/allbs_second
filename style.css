@@ -4405,11 +4405,11 @@ img.logo_black {
     -webkit-justify-content: flex-end;
     align-items: center;
     -webkit-align-items: center;
-    padding: 0 -5px;
+    padding: 0 -10px;
 }
 
 .inline_2 > div {
-    padding: 0 5px;
+    padding: 0 10px;
 }
 
 .map_object_header {
