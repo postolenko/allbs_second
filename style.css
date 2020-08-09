@@ -1482,6 +1482,34 @@ img.logo_black {
     width: calc(50% - 175px);
 }
 
+.header_main > .row {
+    max-width: 100%;
+    padding: 0 25px;
+}
+
+.header_main .left {
+    width: calc(50% - 175px);
+    padding-top: 8px;
+}
+
+.header_main .center {
+    width: 350px;
+    float: left;
+    text-align: center;
+}
+
+.header_main .right {
+    width: calc(50% - 175px);
+}
+
+.header_main .menu_btn_2 .sp_1 span {
+    background: #ffffff;
+}
+
+.header_main .menu_btn_2 .sp_2 span {
+    color: #ffffff;
+}
+
 .logo_city {
     display: inline-block;
     vertical-align: top;
@@ -1608,22 +1636,13 @@ img.logo_black {
 }
 
 .menu_2 {
-    /*display: none;*/
     display: block;
-    /*margin-top: 17px;*/
-    max-width: 600px;
+    /*max-width: 600px;*/
+    max-width: 480px;
     margin: 17px auto 0 auto;
     padding: 10px 0;
     background: #fff;
     width: 100%;
-/*    max-height: 150px;
-    overflow-y: auto;
-    position: absolute;
-    top: 100%;
-    left: 0;*/
-/*    -webkit-box-shadow: 0 0 5px 0 rgba(0,0,0,.5);
-    -moz-box-shadow: 0 0 5px 0 rgba(0,0,0,.5);
-    box-shadow: 0 0 5px 0 rgba(0,0,0,.5);*/
     z-index: 2;
 }
 
@@ -1632,6 +1651,7 @@ img.logo_black {
     padding: 6px 15px;
     font-size: 20px;
     line-height: 20px;
+    color: #000000;
     -webkit-transition-property: background, color;
     -webkit-transition-duration: .3s;
     -webkit-transition-timing-function: ease;
@@ -1653,6 +1673,12 @@ img.logo_black {
     transition-timing-function: ease;
 }
 
+.menu_2 ul li a:link,
+.menu_2 ul li a:visited {
+    background: rgba(62, 176, 96, 0);
+    color: #000000;
+}
+
 .menu_2 ul li a:hover {
     background: rgba(62, 176, 96, .15);
     color: #3eb060;
@@ -1660,6 +1686,28 @@ img.logo_black {
 
 .menu_2 ul li a:active,
 .menu_2 ul li a.active {
+    background: rgba(62, 176, 96, .15);
+    color: #3eb060;
+    border-left: 2px solid #3eb060;
+}
+
+.menu_2_white {
+    background: transparent;
+}
+
+.menu_2_white ul li a:link,
+.menu_2_white ul li a:visited {
+    background: rgba(62, 176, 96, 0);
+    color: #fff;
+}
+
+.menu_2_white ul li a:hover {
+    background: rgba(62, 176, 96, .15);
+    color: #3eb060;
+}
+
+.menu_2_white ul li a:active,
+.menu_2_white ul li a.active {
     background: rgba(62, 176, 96, .15);
     color: #3eb060;
     border-left: 2px solid #3eb060;
@@ -1677,8 +1725,20 @@ img.logo_black {
     top: 0;
     left: 0;
     z-index: 11;
-    /*background: rgba(0, 0, 0, .9);*/
     background: rgba(255, 255, 255, .95);
+}
+
+.main_nav_wrapp_main {
+    background: rgba(0, 0, 0, .9);
+}
+
+.close_btn_white span {
+    background: #fff;
+}
+
+.main_nav_wrapp .main_nav {
+    max-width: 480px;
+    margin: 10px auto;
 }
 
 /*-- /Header - Inner --*/
