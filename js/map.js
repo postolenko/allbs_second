@@ -52,18 +52,18 @@ if( document.getElementById("object_map") ) {
 	            nextArrow: '<button class="slick-next white_right_arrow" aria-label="Next" type="button"></button>'
 	        });
 
-	        // mapObjectSlider.on('init', function(event, slick, currentSlide){
-	        //     slideImgBox = $(this).find("[data-slick-index ="+currentSlide+"] .img_box");
-	        //     imagePath = slideImgBox.attr("data-imageurl");
-	        //     slideImgBox.find("img").attr("src", imagePath);
-	        //     console.log("sdsdsds");
-	        // });
+	        mapObjectSlider.on('init', function(event, slick, currentSlide){
+	            slideImgBox = $(this).find("[data-slick-index ="+currentSlide+"] .img_box");
+	            imagePath = slideImgBox.attr("data-imageurl");
+	            slideImgBox.find("img").attr("src", imagePath);
+	            // console.log("sdsdsds");
+	        });
 
-			// mapObjectSlider.on('beforeChange', function(event, slick, currentSlide, nextSlide){
-	  //           slideImgBox = $(this).find("[data-slick-index ="+nextSlide+"] .img_box");
-	  //           imagePath = slideImgBox.attr("data-imageurl");
-	  //           slideImgBox.find("img").attr("src", imagePath);
-	  //       });
+			mapObjectSlider.on('beforeChange', function(event, slick, currentSlide, nextSlide){
+	            slideImgBox = $(this).find("[data-slick-index ="+nextSlide+"] .img_box");
+	            imagePath = slideImgBox.attr("data-imageurl");
+	            slideImgBox.find("img").attr("src", imagePath);
+	        });
 
 	        // $(".map_card .object_slider").each(function() {
 	            // slideImgBox = $(".map_card .object_slider").find(".slick-current .img_box");
