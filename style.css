@@ -4297,6 +4297,7 @@ img.logo_black {
     position: absolute !important;
     top: 65px;
     right: 10px;
+    z-index: 2;
 }
 
 .object_card.map_card.visible {
@@ -4404,10 +4405,11 @@ img.logo_black {
     -webkit-justify-content: flex-end;
     align-items: center;
     -webkit-align-items: center;
+    padding: 0 -5px;
 }
 
 .inline_2 > div {
-
+    padding: 0 5px;
 }
 
 .map_object_header {
