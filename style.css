@@ -4290,6 +4290,19 @@ img.logo_black {
     z-index: -1;
 }
 
+.object_card.map_card {
+    display: none;
+    width: 100% !important;
+    max-width: 320px !important;
+    position: absolute !important;
+    top: 65px;
+    right: 10px;
+}
+
+.object_card.map_card.visible {
+    display: block;
+}
+
 .map_scroll {
     display: block;
     width: 100%;
