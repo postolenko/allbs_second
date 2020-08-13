@@ -4424,6 +4424,20 @@ body.fixed {
     top: 0;
     right: 0;
 }
+/*
+.map_scroll.fixed {
+    width: calc(50% - 17px);
+    position: fixed;
+    top: 0;
+    right: 0;
+}
+*/
+.map_scroll.fixed.bottom_position {
+    width: 100%;
+    position: absolute;
+    top: unset !important;
+    bottom: 0;
+}
 
 .map_scroll.fixed {
     width: calc(50% - 17px);
@@ -4432,11 +4446,11 @@ body.fixed {
     right: 0;
 }
 
-.map_scroll.fixed.bottom_position {
-    width: 100%;
-    position: absolute;
-    top: unset !important;
+.map_scroll.absolute {
+    position: absolute !important;
+    top: auto;
     bottom: 0;
+    left: 0 !important;
 }
 
 .map_scroll #object_map {
@@ -4485,6 +4499,12 @@ body.fixed {
     z-index: 1;
     right: 0;
 }
+/*
+.object_map.fixed {
+    position: fixed;
+    top: 0;
+    right: 0;
+}*/
 
 .map_object_templ .object_map {
     width: calc(50% - 17px);
