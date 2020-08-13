@@ -1511,11 +1511,11 @@ img.logo_black {
 }
 
 .header_main .menu_btn_2 .sp_1 span {
-    background: #ffffff;
+    background: #ffffff !important;
 }
 
 .header_main .menu_btn_2 .sp_2 span {
-    color: #ffffff;
+    color: #ffffff !important;
 }
 
 .logo_city {
