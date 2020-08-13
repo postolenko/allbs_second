@@ -99,19 +99,19 @@ function getMapParams() {
     }
 }
 
-function getfilterNavParams() {
-    if($("#filters").length > 0) {
-        if($(window).scrollTop() > $("#filters").offset().top ) {
-            $(".filter_nav").addClass("fixed");
-            $(".filter_resp").addClass("scroll");
-            $("#filters").outerHeight($(".filter_nav").outerHeight());
-        } else {
-            $(".filter_nav").removeClass("fixed");
-            $(".filter_resp").removeClass("scroll");
-            $("#filters").height(false);
-        }
-    }
-}
+// function getfilterNavParams() {
+//     if($("#filters").length > 0) {
+//         if($(window).scrollTop() > $("#filters").offset().top ) {
+//             $(".filter_nav").addClass("fixed");
+//             $(".filter_resp").addClass("scroll");
+//             $("#filters").outerHeight($(".filter_nav").outerHeight());
+//         } else {
+//             $(".filter_nav").removeClass("fixed");
+//             $(".filter_resp").removeClass("scroll");
+//             $("#filters").height(false);
+//         }
+//     }
+// }
 
 function getCardParams() {
     $(".object_card").each(function() {
@@ -163,7 +163,7 @@ $(window).resize(function() {
     getHeaderParams();
     getMapParams();
     getBarsChart();
-    getfilterNavParams();
+    // getfilterNavParams();
     getCardParams();
     // -------------
     $(".promo_slider .slide").css({
@@ -174,7 +174,7 @@ $(window).resize(function() {
 $(document).scroll(function() {
     getHeaderParams();
     getMapParams();
-    getfilterNavParams();
+    // getfilterNavParams();
     getCardParams();
 });
 
@@ -183,7 +183,7 @@ $(document).ready(function() {
     getAdaptivePositionElements();
     getMapParams();
     getBarsChart();
-    getfilterNavParams();
+    // getfilterNavParams();
     getCardParams();
 
     $(".top_menu").each(function() {
