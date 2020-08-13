@@ -1022,6 +1022,7 @@ $(document).on("click", ".respmenubtn", function(e){
             $("[data-filters-index='filters_3'] .minVal2").html(leftRange);
             $("[data-filters-index='filters_3'] .maxVal2").html(rightRange);
             $(".price_resp").html($("#price_sel").html());
+            $(".price_values").text($("#price_sel").text()[0] + " " + $("#input-number_1").val()+" - "+ $("#input-number_2").val());
         });
         priceSlider2.noUiSlider.on('set', function( values, handle ) {
             setTimeout(function() {           
@@ -1041,6 +1042,7 @@ $(document).on("click", ".respmenubtn", function(e){
             $("[data-filters-index='filters_3'] .minVal2").html(minVal);
             $("[data-filters-index='filters_3'] .maxVal2").html(maxVal);
             $(".price_resp").html($("#price_sel").html());
+            $(".price_values").text($("#price_sel").text()[0] + " " + $("#input-number_1").val()+" - "+ $("#input-number_2").val());
         });
         $("#input-number_1").keyup(function() {
             activeInputVal = parseInt( $(this).val() );
@@ -1310,18 +1312,10 @@ $(document).on("click", ".respmenubtn", function(e){
 
     $(".rotate_btn").on("click", function(e) {
         e.preventDefault();
-        if(!$(this).hasClass("rotate")) {
-            $(this).addClass("rotate");
-            // setTimeout(function() {
-            //     $(".rotate_btn").addClass("rotateBack");
-            // }, 1000);
-        } else {
-            $(this).removeClass("rotate");
-            // setTimeout(function() {
-            //     $(".rotate_btn").removeClass("rotateBack");
-            // }, 2000);
-        }
+        $(this).toggleClass("rotate");
     });
+
+    // -----------------
 
     var chChildrens;
 
@@ -1389,5 +1383,40 @@ $(document).on("click", ".respmenubtn", function(e){
             // asNavFor: $(".slider_partners_2")
         });
     }
+
+    // ------------
+
+    var chIndex, countCh;
+
+    $("[data-ch]").on("change", function() {
+        chIndex = $(this).attr("data-ch");
+        countCh = 0;
+        $("[data-ch ='"+chIndex+"']").each(function() {
+            if($(this).is(":checked")) {
+                countCh++;
+            }
+        });
+        if(countCh == 0) {
+            $("[data-count-ch ='"+chIndex+"']").text("");
+        } else {
+            $("[data-count-ch ='"+chIndex+"']").text(": "+countCh);
+        }        
+    });
+
+    $("[data-main-ch]").on("change", function() {
+        chIndex = $(this).attr("data-main-ch");
+        countCh = 0;
+        $("[data-ch ='"+chIndex+"']").each(function() {
+            if($(this).is(":checked")) {
+                countCh++;
+            }
+        });
+        if(countCh == 0) {
+            $("[data-count-ch ='"+chIndex+"']").text("");
+        } else {
+            $("[data-count-ch ='"+chIndex+"']").text(": "+countCh);
+        }        
+    });
+
 
 });

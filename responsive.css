@@ -2,7 +2,7 @@
 
 	/*-- Header --*/
 
-	.header_main .left {
+/*	.header_main .left {
 		width: 100px !important;
 	}
 
@@ -12,7 +12,7 @@
 
 	.header_main .right {
 		width: calc(100% - 450px) !important;
-	}
+	}*/
 
 	/*-- /Header --*/
 
@@ -106,18 +106,6 @@
 	    width: calc(36% - 17px);
 	}
 
-	.map_object_header_2 {
-
-	}
-
-	.map_object_header_2 .left {
-
-	}
-
-	.map_object_header_2 .right {
-
-	}
-
 	.map_object_header_2 > .left_col {
 	    width: 82%;
 	}
@@ -127,7 +115,27 @@
 		padding-top: 10px;
 	}
 
+	.dropdown_item_title {
+	    padding: 8px 18px 8px 10px;
+	}
+
+	.orange_pill {
+	    min-width: 91px;
+	}
+
 	/*-- /Section 1 - Info Side Page --*/
+
+}
+
+@media only screen and (max-width: 1124px) {
+
+	.novisible_1124 {
+	    display: none;
+	}
+
+	.visible_1124 {
+	    display: block;
+	}
 
 }
 
@@ -929,6 +937,10 @@
 		padding: 0;
 	}*/
 
+	.top_menu .dropdowm_wrapp_main .dropdown_title {
+	    padding: 9px 2px;
+	}
+
 	.search_result {
 		max-height: calc(100vh - 56px);
 		overflow-y: auto;
@@ -952,15 +964,15 @@
 	}
 
 	.header_main .left {
-	    width: 30px !important;
+	    width: calc(50% - 120px) !important;
 	}
 
 	.header_main .center {
-	    width: 290px !important;
+	    width: 240px !important;
 	}
 
 	.header_main .right {
-	    width: calc(100% - 320px) !important;
+	    width: calc(50% - 120px) !important;
 	}
 
 	.menu_btn_2 .sp_2 {
@@ -1171,12 +1183,16 @@
 	    display: none;
 	}
 
+	.header_main .left {
+		width: 50px !important;
+	}
+
 	.header_main .center {
-	    width: 235px !important;
+	    width: calc(100% - 50px) !important;
 	}
 
 	.header_main .right {
-	    width: calc(100% - 266px) !important;
+	    display: none;
 	}
 
 	.dropdowm_wrapp_2 {
@@ -1449,13 +1465,13 @@
 
 	/*-- Header --*/
 
-	.header_main .center {
+/*	.header_main .center {
 	    width: calc(100% - 50px) !important;
 	}
 
 	.header_main .right {
 		display: none;
-	}
+	}*/
 
 /*	.header_1 .center {
 	    width: calc(100% - 30px) !important;
