@@ -1113,9 +1113,28 @@
 	    line-height: 26px;
 	}
 
+	.promo_footer {
+	    padding-bottom: 35px;
+	}
+
 	.promo_footer p {
-	    font-size: 13px;
-	    line-height: 15px;
+	    font-size: 16px;
+	    line-height: 18px;
+	}
+
+	.promo_footer p a {
+	    font-size: 16px;
+	    line-height: 18px;
+	}
+
+	.promo_slider_arrows .slick-prev {
+	    top: -17px;
+	    left: 7px;
+	}
+
+	.promo_slider_arrows .slick-next {
+	    top: -17px;
+	    right: 7px;
 	}
 
 	/*-- /Info side Promo Section --*/

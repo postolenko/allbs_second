@@ -1727,9 +1727,6 @@ img.logo_black {
     height: 100vh;
     overflow-y: auto;
     margin: 0;
-/*    padding-top: 10px;
-    padding-bottom: 80px;*/
-    /*position: fixed;*/
     padding: 10px 10px 80px 10px;
     position: absolute;
     top: 0;
@@ -1741,10 +1738,6 @@ img.logo_black {
 .main_nav_wrapp_main {
     background: rgba(0, 0, 0, .9);
 }
-
-/*.close_btn_white span {
-    background: #fff;
-}*/
 
 .main_nav_wrapp .main_nav {
     max-width: 480px;
@@ -6117,6 +6110,39 @@ body.fixed {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    position: relative;
+    overflow: hidden;
+}
+
+.info_side_promo:before {
+    display: block;
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, .4);
+    z-index: 2;
+}
+
+.promo_slider {
+    width: 100%;
+    height: 100%;
+    position: absolute !important;
+    top: 0;
+    left: 0;
+}
+
+.promo_slider .slide {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.info_side_promo > .row {
+    position: relative;
+    z-index: 2;
 }
 
 .promo_text {
@@ -6190,6 +6216,25 @@ body.fixed {
 
 .promo_footer p a:hover {
     border-bottom: 1px solid #fff;
+}
+
+.promo_slider_arrows {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.promo_slider_arrows .slick-prev {
+    position: absolute;
+    top: -38px;
+    left: 20px;
+}
+
+.promo_slider_arrows .slick-next {
+    position: absolute;
+    top: -38px;
+    right: 20px;
 }
 
 /*-- /Info side Promo Section --*/

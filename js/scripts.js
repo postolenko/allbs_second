@@ -165,6 +165,10 @@ $(window).resize(function() {
     getBarsChart();
     // getfilterNavParams();
     getCardParams();
+    // -------------
+    $(".promo_slider .slide").css({
+        "height" : $(".promo_slider").height() + "px"
+    });
 });
 
 $(document).scroll(function() {
@@ -1359,5 +1363,31 @@ $(document).on("click", ".respmenubtn", function(e){
             $(this).removeClass("active");
         }
     });
+
+    // ------------
+
+    if( $(".promo_slider").length > 0 ) {
+
+        $(".promo_slider").on('init', function(){
+            $(".promo_slider .slide").css({
+                "height" : $(".promo_slider").height() + "px"
+            });
+        });
+
+        $(".promo_slider").not(".slick-initialized").slick({
+            dots: false,
+            arrows: true,
+            autoplay: true,
+            autoplaySpeed: 4000,
+            speed: 1200,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            fade: true,
+            appendArrows: $(".promo_slider_arrows"),
+            prevArrow: '<button class="slick-prev white_left_arrow" aria-label="Previous" type="button"></button>',
+            nextArrow: '<button class="slick-next white_right_arrow" aria-label="Next" type="button"></button>'
+            // asNavFor: $(".slider_partners_2")
+        });
+    }
 
 });
