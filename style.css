@@ -4403,17 +4403,60 @@ body.fixed {
 }
 
 .object_card.map_card {
-    display: none;
+    /*display: none;*/
     width: 100% !important;
     max-width: 320px !important;
     position: absolute !important;
-    top: 65px;
-    right: 10px;
+    top: 50px;
+    right: 120vw;
     z-index: 2;
+    opacity: 0;
+    -webkit-transition-property: opacity, top;
+    -webkit-transition-duration: .3s;
+    -webkit-transition-timing-function: ease;
+
+    -moz-transition-property: opacity, top;
+    -moz-transition-duration: .3s;
+    -moz-transition-timing-function: ease;
+
+    -ms-transition-property: opacity, top;
+    -ms-transition-duration: .3s;
+    -ms-transition-timing-function: ease;
+
+    -o-transition-property: opacity, top;
+    -o-transition-duration: .3s;
+    -o-transition-timing-function: ease;
+
+    transition-property: opacity, top;
+    transition-duration: .3s;
+    transition-timing-function: ease;
 }
 
 .object_card.map_card.visible {
+    /*display: block;*/
+    top: 65px;
+    right: 10px;
+    opacity: 1;
+}
+
+.close_card {
     display: block;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    border: 1px solid transparent;
+    background-color: #fff;
+    background-image: url(img/close.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.map_card .close_card {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    z-index: 4;
 }
 
 .map_scroll {

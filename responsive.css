@@ -1511,6 +1511,15 @@
 		font-size: 15px;
 	}
 
+	.map_card .close_card {
+	    top: 0;
+	    right: 0;
+	}
+
+	.object_card.map_card.visible {
+	    right: 0;
+	}
+
 	/*-- /Section 1 - Info Side Page --*/
 
 }
