@@ -528,6 +528,10 @@
 		position: fixed;
 	}
 
+	.header_1 {
+	    position: absolute;
+	}
+
 	.header_site.js {
 		background: rgba(0, 0, 0, .8);
 	}
@@ -653,9 +657,9 @@
 
 	/*-- Section 1 - Info Side Page --*/
 
-	.filter_nav.fixed {
+/*	.filter_nav.fixed {
 	    top: 52px;
-	}
+	}*/
 
 	.filter_resp.scroll {
 	     padding-top: 120px;
@@ -816,9 +820,9 @@
 		padding: 40px 15px 140px 15px
 	}
 
-	.filter_nav.fixed {
+/*	.filter_nav.fixed {
 		top: 49px;
-	}
+	}*/
 
 	.filter_resp.scroll {
 	    padding-top: 50px;

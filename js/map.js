@@ -1,3 +1,10 @@
+function getJbjectsAdressPosition()  {	
+    var leftOHCoord = $(".map_objects_popup .popup_content").offset().left;
+    $(".map_objects_templ .objects_adress").css({
+        "left" : leftOHCoord + "px"
+    });
+}
+
 if( document.getElementById("object_map") ) {
 
 	var map;
@@ -51,6 +58,9 @@ if( document.getElementById("object_map") ) {
         });
         $(".popup_bg").fadeIn(300);
         $("[data-popup = '"+ popupName +"']").fadeIn(300);
+		setTimeout(function() {
+			getJbjectsAdressPosition();
+		}, 100);       
 
         objectSlider = $(".map_objects_thumbs .object_slider").not(".slick-initialized").slick({
             dots: false,
@@ -73,3 +83,11 @@ if( document.getElementById("object_map") ) {
 	}
 
 }
+
+$(document).ready(function() {
+    getJbjectsAdressPosition();
+});
+
+$(window).resize(function() {
+    getJbjectsAdressPosition();
+});

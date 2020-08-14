@@ -170,8 +170,6 @@ $(window).resize(function() {
     });
 
     // -------------
-
-
 });
 
 $(document).scroll(function() {
@@ -189,7 +187,6 @@ $(document).ready(function() {
     getBarsChart();
     getfilterNavParams();
     getCardParams();
-
     // -------------
 
     $(".top_menu").each(function() {
@@ -706,6 +703,8 @@ $(document).on("click", ".respmenubtn", function(e){
         if(mapCheckbox.prop("checked")) {
             $(".map_object_templ").addClass("map_show");
             $(".object_map").addClass("visible");
+            $("html").scrollTop($("#map_box").offset().top);
+
         } else {
             $(".map_object_templ").removeClass("map_show");
             $(".object_map").removeClass("visible");
