@@ -3586,6 +3586,20 @@ body.fixed {
     margin: 25px 0 14px 0;
 }
 
+.square_input {
+    position: relative;
+}
+
+.square_input:before {
+    display: block;
+    width: 10px;
+    height: 10px;
+    content: "м²";
+    position: absolute;
+    top: 7px;
+    right: 15px;
+}
+
 .single_input {
     display: inline-block;
     vertical-align: top;
