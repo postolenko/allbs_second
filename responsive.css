@@ -505,6 +505,10 @@
 
 	/*-- Section 1 - Info Side Page --*/
 
+	.promo_text {
+	    padding: 35px 0;
+	}
+
 	.dropdown_item_title {
 	    padding: 8px 21px 8px 9px;
 	}
@@ -1345,6 +1349,10 @@
 	/*-- /Section 11 --*/
 
 	/*-- Section 1 - Info Side Page --*/
+
+	.promo_text {
+	    padding: 10px 0;
+	}
 
 	.more_filter {
 		margin-top: 5px;
