@@ -1056,7 +1056,7 @@ $(document).on("click", ".respmenubtn", function(e){
             $("[data-filters-index='filters_3'] .minVal2").html(leftRange);
             $("[data-filters-index='filters_3'] .maxVal2").html(rightRange);
             $(".price_resp").html($("#price_sel").html());
-            $(".price_values").text($("#price_sel").text()[0] + " " + $("#input-number_1").val()+" - "+ $("#input-number_2").val());
+            // $(".price_values").text($("#price_sel").text()[0] + " " + $("#input-number_1").val()+" - "+ $("#input-number_2").val());
         });
         priceSlider2.noUiSlider.on('set', function( values, handle ) {
             setTimeout(function() {           

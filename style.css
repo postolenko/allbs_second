@@ -4202,6 +4202,11 @@ body.fixed {
     padding: 0;
 }
 
+.align_right .custom_select_wrapp {
+    display: inline-block;
+    vertical-align: top;
+}
+
 .metro_two_cols_3 {
     display: block;
     margin: 5px 0;
@@ -6604,7 +6609,7 @@ body.fixed {
 
 .map_objects_templ {
     position: relative;
-    padding: 30px 15px 80px 15px;
+    padding: 10px 15px 80px 15px;
 }
 
 .objects_adress {
@@ -6630,17 +6635,22 @@ body.fixed {
 }
 
 .map_objects_popup .popup_content {
-    max-width: 100%;
+    max-width: 640px;
     margin-top: 0;
     padding: 0 0 39px 0;
 }
 
 .map_objects_templ .objects_adress {
     width: 100%;
+    max-width: 640px;
     position: fixed;
     top: 0;
-    left: 0;
+    left: 50%;
     z-index: 4;
+    -webkit-transform: translate(-50%, 0);
+    -moz-transform: translate(-50%, 0);
+    transform: translate(-50%, 0);
+    margin-left: -8px;
 }
 
 .objects_adress p {
@@ -6659,7 +6669,7 @@ body.fixed {
 }
 
 .map_objects_thumbs .object_card {
-    width: calc(25% - 14px);
+    width: calc(50% - 14px);
 }
 
 

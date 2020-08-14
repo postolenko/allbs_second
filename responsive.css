@@ -129,14 +129,6 @@
 
 	/*-- /Section 1 - Info Side Page --*/
 
-	/*-- Popups --*/
-
-	.map_objects_thumbs .object_card {
-	    width: calc(33.33% - 14px);
-	}
-
-	/*-- /Popups --*/
-
 }
 
 @media only screen and (max-width: 1124px) {
@@ -529,10 +521,6 @@
 		display: none;
 	}
 
-	.map_objects_thumbs .object_card {
-	    width: calc(50% - 14px);
-	}
-
 	/*-- /Section 1 - Info Side Page --*/
 
 	/*-- Footer --*/
@@ -849,7 +837,7 @@
 	}
 
 	.filter_resp {
-		padding: 40px 15px 110px 15px;
+		padding: 40px 15px 140px 15px
 	}
 
 	.filter_nav.fixed {
