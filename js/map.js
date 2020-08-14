@@ -82,14 +82,6 @@ $(document).ready(function() {
 		$(this).closest(".map_card").removeClass("visible");
 	});
 
-	// $("#object_map").on('click', function(e) {		
-	// 	// if($(".map_card").hasClass("visible")) {
-	// 		// e.preventDefault();
-	// 		$(".map_card").removeClass("visible");
-	// 		// console.log("dsdsds");
-	// 	// }
-	// });
-
 	$(document).on("mouseup", function(e) {
 	    if($(".map_card").is(":visible")) {
 	      e.preventDefault();
@@ -97,27 +89,8 @@ $(document).ready(function() {
 	      if (!hide_element.is(e.target)
 	          && hide_element.has(e.target).length === 0) {
 	      		hide_element.removeClass("visible");
-	          // curTop = $("body").css("top");
-	          // curTop = Math.abs(parseInt(curTop, 10));
-	          // $("body").attr("style", "");
-	          // if (curTop !== 0) {
-	          //     $("html").scrollTop(curTop);
-	          // }
-	          // $("body").removeClass("fixed");
-	          // $(".popup_bg").fadeOut(300);
-	          // $("[data-popup]").fadeOut(300);
-	          // setTimeout(function() {
-	          //   $(".popup_form").removeClass("hide");
-	          //   $(".succes_wrapp").fadeOut(200);
-	          // }, 500);
 	      }
 	    }
 	  });
-
-	// $(document).on("click", function() {
-	// 	if(!$(this).closest(".map_card")) {
-	// 		$(".map_card").removeClass("visible");
-	// 	}
-	// });
-
+	
 });

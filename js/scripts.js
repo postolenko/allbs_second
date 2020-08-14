@@ -356,7 +356,6 @@ $(document).on("click", ".respmenubtn", function(e){
       }
   });
 
-
   // $(document).on("mouseup", function(e) {
   //   if($(".popup").is(":visible")) {
   //     e.preventDefault();
@@ -379,9 +378,6 @@ $(document).on("click", ".respmenubtn", function(e){
   //     }
   //   }
   // });
-
-
-
 
 	$(".search_open").on('click', function(e) {
 		e.preventDefault();

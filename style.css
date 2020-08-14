@@ -4433,7 +4433,6 @@ body.fixed {
 }
 
 .object_card.map_card.visible {
-    /*display: block;*/
     top: 65px;
     right: 10px;
     opacity: 1;
@@ -4566,6 +4565,11 @@ body.fixed {
 .map_object_header_2 > .right_col {
     width: 40%;
     text-align: right;
+}
+
+.map_object_header_2 .custom_select_wrapp .custom_select {
+    padding-right: 0;
+    left: 0;
 }
 
 .map_object_header_2  > .left_col {
@@ -5347,7 +5351,8 @@ body.fixed {
 
 .filter_resp_wrapp.visible {
     left: 0;
-    z-index: 5;
+    /*z-index: 5;*/
+    z-index: 12;
 }
 
 .filter_resp {
@@ -5355,7 +5360,7 @@ body.fixed {
     margin-top: auto;
     max-width: 435px;
     overflow-y: auto;
-    padding: 120px 25px 50px 25px;
+    padding: 40px 25px 50px 25px;
     background: #ffffff;
     position: relative;
     z-index: 4;
@@ -5402,7 +5407,7 @@ body.fixed {
     position: fixed;
     top: 0;
     left: 0;
-    padding: 15px 25px;
+    padding: 15px 25px 5px 25px;
 }
 
 .filter_resp_wrapp.visible .close_box {
