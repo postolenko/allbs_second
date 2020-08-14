@@ -1433,6 +1433,20 @@
 
 	/*-- /Section 2 - Info Side Page --*/
 
+	.objects_adress > div:nth-child(2) {
+	    width: calc(100% - 140px);
+	}
+
+	.objects_adress > div:nth-child(3) {
+	    width: 90px;
+	}
+
+	.objects_adress .orange_pill {
+	    min-width: 90px;
+	    padding: 11px 9px 10px 9px;
+	    font-size: 12px;
+	}
+
 }
 
 @media only screen and (max-width: 450px) {
@@ -1458,7 +1472,7 @@
 
 	/*-- /Header --*/
 
-	.map_object_header_2 {
+/*	.map_object_header_2 {
 	    display: block;
 	    padding: 5px 0 10px 0;
 	}
@@ -1481,6 +1495,10 @@
 
 	.map_object_header_2 .inline_2 > div {
 	    padding: 0;
+	}*/
+
+	.map_object_header_2 p {
+		font-size: 13px;
 	}
 
 }
@@ -1554,6 +1572,35 @@
 	}
 
 	/*-- /Popups --*/
+
+}
+
+@media only screen and (max-width: 360px) {
+
+	.map_object_header_2 {
+	    display: block;
+	    padding: 5px 0 10px 0;
+	}
+
+	.map_object_header_2 > .left_col {
+		width: 100%;
+		padding: 0;
+	}
+
+	.map_object_header_2 > .right_col {
+	    width: 100%;
+	    padding: 0;
+	    text-align: left;
+	}
+
+	.map_object_header_2 .inline_2 {
+	    justify-content: flex-start;
+	    -webkit-justify-content: flex-start;
+	}
+
+	.map_object_header_2 .inline_2 > div {
+	    padding: 0;
+	}
 
 }
 
