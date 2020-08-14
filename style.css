@@ -5696,6 +5696,10 @@ body.fixed {
     display: none;
 }
 
+.main_checkbox label {
+    font-weight: 800;
+}
+
 .red_line .main_checkbox label {
     color: #d74343;
 }
