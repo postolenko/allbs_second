@@ -820,10 +820,6 @@
 		padding: 40px 15px 140px 15px
 	}
 
-/*	.filter_nav.fixed {
-		top: 49px;
-	}*/
-
 	.filter_resp.scroll {
 	    padding-top: 50px;
 	}
@@ -1308,11 +1304,11 @@
 	}
 
 	.object_card .thumb_5_footer_col:nth-child(1) p {
-	    font-size: 13px;
+	    font-size: 14px;
 	}
 
 	.object_card .thumb_5_footer_col:nth-child(2) p {
-	    font-size: 12px;
+	    font-size: 13px;
 	}
 
 	.thumb_descript {

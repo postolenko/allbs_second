@@ -6466,6 +6466,9 @@ body.fixed {
     align-items: center;
     -webkit-align-items: center;
     background-color: #a6a6a6;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 
 .objects_adress > div:nth-child(1) {
