@@ -6489,6 +6489,7 @@ body.fixed {
 }
 
 .objects_adress .inner_bg {
+    width: calc(100% - 50px);
     display: flex;
     display: -webkit-flex;
     align-items: center;
