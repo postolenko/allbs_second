@@ -703,7 +703,7 @@ $(document).on("click", ".respmenubtn", function(e){
         if(mapCheckbox.prop("checked")) {
             $(".map_object_templ").addClass("map_show");
             $(".object_map").addClass("visible");
-            $("html").scrollTop($("#map_box").offset().top);
+            $("html").scrollTop($("#map_box").offset().top - 20);
 
         } else {
             $(".map_object_templ").removeClass("map_show");
