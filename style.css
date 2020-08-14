@@ -6481,10 +6481,6 @@ body.fixed {
     display: -webkit-flex;
     align-items: center;
     -webkit-align-items: center;
-    background-color: #a6a6a6;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
 }
 
 .objects_adress > div:nth-child(1) {
@@ -6492,12 +6488,24 @@ body.fixed {
     padding-left: 10px;
 }
 
-.objects_adress > div:nth-child(2) {
-    width: calc(100% - 190px);
-    padding: 0 10px;
+.objects_adress .inner_bg {
+    display: flex;
+    display: -webkit-flex;
+    align-items: center;
+    -webkit-align-items: center;
+    width: calc(100% - 50px);
+    background-color: #a6a6a6;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 
-.objects_adress > div:nth-child(3) {
+.objects_adress .inner_bg > div:nth-child(1) {
+    width: calc(100% - 140px);
+    padding-left: 15px;
+}
+
+.objects_adress .inner_bg > div:nth-child(2) {
     width: 140px;
     display: flex;
     display: -webkit-flex;
