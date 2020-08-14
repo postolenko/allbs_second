@@ -6625,12 +6625,12 @@ body.fixed {
 }
 
 .objects_adress > div:nth-child(2) {
-    width: calc(100% - 100px);
+    width: calc(100% - 175px);
     padding: 0 10px;
 }
 
 .objects_adress > div:nth-child(3) {
-    width: 130px;
+    width: 125px;
 }
 
 .map_objects_popup .popup_content {
