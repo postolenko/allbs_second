@@ -5265,6 +5265,10 @@ body.fixed {
     padding-top: 70px;
 }
 
+.filter_resp_inner {
+    margin-bottom: 150px;
+}
+
 .filter_resp .dropdown_item_menu {
     margin: 0;
     padding: 10px 0 10px 5px!important;
