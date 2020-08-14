@@ -1420,11 +1420,11 @@
 
 	/*-- /Section 2 - Info Side Page --*/
 
-	.objects_adress > div:nth-child(2) {
-	    width: calc(100% - 140px);
+	.objects_adress .inner_bg > div:nth-child(1) {
+	    width: calc(100% - 90px);
 	}
 
-	.objects_adress > div:nth-child(3) {
+	.objects_adress .inner_bg > div:nth-child(2) {
 	    width: 90px;
 	}
 
