@@ -3216,6 +3216,16 @@ body.fixed {
     font-weight: 600;
 }
 
+.thumb_5_footer_inner {
+    padding: 10px 0;
+}
+
+.thumb_5_footer_inner p {
+    font-size: 14px;
+    font-weight: 600;
+    color: #000000;
+}
+
 /*-- /Section 10 --*/
 
 /*-- Section 11 --*/
@@ -4466,33 +4476,19 @@ body.fixed {
     top: 0;
     right: 0;
 }
-/*
+
 .map_scroll.fixed {
     width: calc(50% - 17px);
     position: fixed;
     top: 0;
     right: 0;
 }
-*/
+
 .map_scroll.fixed.bottom_position {
     width: 100%;
     position: absolute;
     top: unset !important;
     bottom: 0;
-}
-
-.map_scroll.fixed {
-    width: calc(50% - 17px);
-    position: fixed;
-    top: 0;
-    right: 0;
-}
-
-.map_scroll.absolute {
-    position: absolute !important;
-    top: auto;
-    bottom: 0;
-    left: 0 !important;
 }
 
 .map_scroll #object_map {

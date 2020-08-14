@@ -30,6 +30,10 @@
 		width: calc(100% - 450px) !important;
 	}*/
 
+	.novisible_1380 {
+		display: none !important;
+	}
+
 	/*-- .Header - Inner --*/
 
 	/*-- Section 1 - Info Side Page --*/
@@ -972,6 +976,11 @@
 
 	.menu_btn_2 .sp_2 {
 		display: none;
+	}
+
+	.menu_2 ul li a {
+		font-size: 23px;
+		line-height: 33px;
 	}
 
 	.logo_city {
