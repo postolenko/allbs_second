@@ -29,14 +29,6 @@ if( document.getElementById("object_map") ) {
 
 	}
 
-	// function toggleBounce() {
-	//   if (marker.getAnimation() !== null) {
-	//     marker.setAnimation(null);
-	//   } else {
-	//     marker.setAnimation(google.maps.Animation.BOUNCE);
-	//   }
-	// }
-
 	function showObject() {
         popupName = "popup_2";
         div = document.createElement('div');
@@ -78,37 +70,6 @@ if( document.getElementById("object_map") ) {
             slideImgBox.find("img").attr("src", imagePath);
         });
 
- //        setTimeout(function() {
-
-
-
-	// 	    $(".object_card").each(function() {
-	// 	        var innerWrapp = $(this).find(".inner_wrapp");
-	// 	        $(this).height(innerWrapp.height());
-	// 	    });
-
-	// }, 9000);
-
 	}
 
 }
-
-// $(document).ready(function() {
-
-// 	$(".map_card .close_card").on('click', function(e) {
-// 		e.preventDefault();
-// 		$(this).closest(".map_card").removeClass("visible");
-// 	});
-
-// 	$(document).on("mouseup", function(e) {
-// 	    if($(".map_card").is(":visible")) {
-// 	      e.preventDefault();
-// 	      hide_element = $(".map_card");
-// 	      if (!hide_element.is(e.target)
-// 	          && hide_element.has(e.target).length === 0) {
-// 	      		hide_element.removeClass("visible");
-// 	      }
-// 	    }
-// 	  });
-	
-// });

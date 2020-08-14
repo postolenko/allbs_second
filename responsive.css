@@ -1,34 +1,6 @@
 @media only screen and (max-width: 1380px) {
 
-	/*-- Header --*/
-
-/*	.header_main .left {
-		width: 100px !important;
-	}
-
-	.header_main .center {
-		width: 350px !important;
-	}
-
-	.header_main .right {
-		width: calc(100% - 450px) !important;
-	}*/
-
-	/*-- /Header --*/
-
 	/*-- Header - Inner --*/
-
-/*	.header_1 .left {
-		width: 100px !important;
-	}
-
-	.header_1 .center {
-		width: 350px !important;
-	}
-
-	.header_1 .right {
-		width: calc(100% - 450px) !important;
-	}*/
 
 	.novisible_1380 {
 		display: none !important;
@@ -1315,18 +1287,28 @@
 	    padding: 10px 0;
 	}
 
-	.thumb_5_footer_col {
+	.object_card .thumb_5_footer_col {
 		padding-top: 10px;
 		padding-bottom: 10px;
 	}
 
-	.thumb_5_footer_col:nth-child(1) p {
-	    font-size: 16px;
+	.object_card .thumb_5_footer_col:nth-child(1) {
+		width: 45%;
+		padding-right: 5px;
 	}
 
-	.thumb_5_footer_col:nth-child(2) p {
+	.object_card .thumb_5_footer_col:nth-child(2) {
+		width: 55%;
+		padding-top: 11px;
+		padding-left: 5px;
+	}
+
+	.object_card .thumb_5_footer_col:nth-child(1) p {
 	    font-size: 13px;
-	    line-height: 16px;
+	}
+
+	.object_card .thumb_5_footer_col:nth-child(2) p {
+	    font-size: 12px;
 	}
 
 	.thumb_descript {
@@ -1477,58 +1459,9 @@
 
 	/*-- /Header --*/
 
-/*	.map_object_header_2 {
-	    display: block;
-	    padding: 5px 0 10px 0;
-	}
-
-	.map_object_header_2 > .left_col {
-		width: 100%;
-		padding: 0;
-	}
-
-	.map_object_header_2 > .right_col {
-	    width: 100%;
-	    padding: 0;
-	    text-align: left;
-	}
-
-	.map_object_header_2 .inline_2 {
-	    justify-content: flex-start;
-	    -webkit-justify-content: flex-start;
-	}
-
-	.map_object_header_2 .inline_2 > div {
-	    padding: 0;
-	}*/
-
 	.map_object_header_2 p {
 		font-size: 13px;
 	}
-
-}
-
-@media only screen and (max-width: 414px) {
-
-	/*-- Header --*/
-
-/*	.header_main .center {
-	    width: calc(100% - 50px) !important;
-	}
-
-	.header_main .right {
-		display: none;
-	}*/
-
-/*	.header_1 .center {
-	    width: calc(100% - 30px) !important;
-	}
-
-	.header_1 .right {
-		display: none;
-	}*/
-
-	/*-- /Header --*/
 
 }
 
@@ -1616,10 +1549,6 @@
 	.sub-menu {
 		display: block !important;
 	}
-
-/*	.main_nav_wrapp {
-		display: none !important;
-	}*/
 
 	/*-- /Header --*/
 
