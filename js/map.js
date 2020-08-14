@@ -38,59 +38,77 @@ if( document.getElementById("object_map") ) {
 	// }
 
 	function showObject() {
-		$(".map_card").toggleClass("visible");
-		// if($(".map_card").hasClass("visible")) {
-			mapObjectSlider = $(".map_card .object_slider").not(".slick-initialized").slick({
-	            dots: false,
-	            arrows: true,
-	            autoplay: false,
-	            speed: 300,
-	            slidesToShow: 1,
-	            slidesToScroll: 1,
-	            fade: true,
-	            prevArrow: '<button class="slick-prev white_left_arrow" aria-label="Previous" type="button"></button>',
-	            nextArrow: '<button class="slick-next white_right_arrow" aria-label="Next" type="button"></button>'
-	        });
+        popupName = "popup_2";
+        div = document.createElement('div');
+        div.style.overflowY = 'scroll';
+        div.style.width = '50px';
+        div.style.height = '50px';
+        div.style.visibility = 'hidden';
+        document.body.appendChild(div);
+        scrollWidth = div.offsetWidth - div.clientWidth;
+        document.body.removeChild(div);
+        $("body").addClass("fixed");
+        $("body").css({
+            "position" : "fixed",
+            "top" :  -$(document).scrollTop() + "px",
+            "overflow" : "hidden",
+            "right" : 0,
+            "left" : 0,
+            "bottom" : 0,
+            "padding-right" : scrollWidth + "px"
+        });
+        $(".popup_bg").fadeIn(300);
+        $("[data-popup = '"+ popupName +"']").fadeIn(300);
 
-	        mapObjectSlider.on('init', function(event, slick, currentSlide){
-	            slideImgBox = $(this).find("[data-slick-index ="+currentSlide+"] .img_box");
-	            imagePath = slideImgBox.attr("data-imageurl");
-	            slideImgBox.find("img").attr("src", imagePath);
-	            // console.log("sdsdsds");
-	        });
+        objectSlider = $(".map_objects_thumbs .object_slider").not(".slick-initialized").slick({
+            dots: false,
+            arrows: true,
+            autoplay: false,
+            speed: 300,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            fade: true,
+            prevArrow: '<button class="slick-prev white_left_arrow" aria-label="Previous" type="button"></button>',
+            nextArrow: '<button class="slick-next white_right_arrow" aria-label="Next" type="button"></button>'
+        });
 
-			mapObjectSlider.on('beforeChange', function(event, slick, currentSlide, nextSlide){
-	            slideImgBox = $(this).find("[data-slick-index ="+nextSlide+"] .img_box");
-	            imagePath = slideImgBox.attr("data-imageurl");
-	            slideImgBox.find("img").attr("src", imagePath);
-	        });
+        $(".object_slider").each(function() {
+            slideImgBox = $(this).find(".slick-current .img_box");
+            imagePath = $(this).find(".slick-current .img_box").attr("data-imageurl");
+            slideImgBox.find("img").attr("src", imagePath);
+        });
 
-	        // $(".map_card .object_slider").each(function() {
-	            // slideImgBox = $(".map_card .object_slider").find(".slick-current .img_box");
-	            // imagePath = $(".map_card .object_slider").find(".slick-current .img_box").attr("data-imageurl");
-	            // slideImgBox.find("img").attr("src", imagePath);
-	        // });
-		// }
+ //        setTimeout(function() {
+
+
+
+	// 	    $(".object_card").each(function() {
+	// 	        var innerWrapp = $(this).find(".inner_wrapp");
+	// 	        $(this).height(innerWrapp.height());
+	// 	    });
+
+	// }, 9000);
+
 	}
 
 }
 
-$(document).ready(function() {
+// $(document).ready(function() {
 
-	$(".map_card .close_card").on('click', function(e) {
-		e.preventDefault();
-		$(this).closest(".map_card").removeClass("visible");
-	});
+// 	$(".map_card .close_card").on('click', function(e) {
+// 		e.preventDefault();
+// 		$(this).closest(".map_card").removeClass("visible");
+// 	});
 
-	$(document).on("mouseup", function(e) {
-	    if($(".map_card").is(":visible")) {
-	      e.preventDefault();
-	      hide_element = $(".map_card");
-	      if (!hide_element.is(e.target)
-	          && hide_element.has(e.target).length === 0) {
-	      		hide_element.removeClass("visible");
-	      }
-	    }
-	  });
+// 	$(document).on("mouseup", function(e) {
+// 	    if($(".map_card").is(":visible")) {
+// 	      e.preventDefault();
+// 	      hide_element = $(".map_card");
+// 	      if (!hide_element.is(e.target)
+// 	          && hide_element.has(e.target).length === 0) {
+// 	      		hide_element.removeClass("visible");
+// 	      }
+// 	    }
+// 	  });
 	
-});
+// });
